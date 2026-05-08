@@ -45,6 +45,7 @@
 <script src="js/nouislider.min.js"></script>
 <script src="js/wNumb.js"></script>
         <script src="data/Dhaka_1_20_Categorised_0.js"></script>
+        <script src="data/percentage_voter_turnout_1.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -64,7 +65,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[23.203051200476903,89.79348492791124],[24.136459620210704,90.74052879600768]]);
+        }).fitBounds([[23.203051200476903,89.79348492791125],[24.136459620210704,90.7405287960077]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/qgis2web/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -191,7 +192,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(215,25,28,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-10':
@@ -206,7 +207,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(223,55,42,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-11':
@@ -221,7 +222,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(230,85,56,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-12':
@@ -236,7 +237,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(238,114,69,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-13':
@@ -251,7 +252,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(245,144,83,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-14':
@@ -266,7 +267,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(253,174,97,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-15':
@@ -281,7 +282,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(253,190,116,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-16':
@@ -296,7 +297,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(254,206,135,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-17':
@@ -311,7 +312,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(254,223,153,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-18':
@@ -326,7 +327,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(255,239,172,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-19':
@@ -341,7 +342,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(255,255,191,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-2':
@@ -356,7 +357,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(238,248,186,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-20':
@@ -371,7 +372,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(221,241,180,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-3':
@@ -386,7 +387,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(205,235,175,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-4':
@@ -401,7 +402,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(188,228,169,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-5':
@@ -416,7 +417,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(171,221,164,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-6':
@@ -431,7 +432,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(145,203,168,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-7':
@@ -446,7 +447,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(120,185,173,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-8':
@@ -461,7 +462,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(94,167,177,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 case 'Dhaka-9':
@@ -476,7 +477,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(69,149,182,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
                 default:
@@ -491,7 +492,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(43,131,186,1.0)',
-                interactive: true,
+                interactive: false,
             }
                     break;
             }
@@ -501,7 +502,7 @@
         map.getPane('pane_Dhaka_1_20_Categorised_0').style['mix-blend-mode'] = 'normal';
         var layer_Dhaka_1_20_Categorised_0 = new L.geoJson(json_Dhaka_1_20_Categorised_0, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_Dhaka_1_20_Categorised_0',
             layerName: 'layer_Dhaka_1_20_Categorised_0',
             pane: 'pane_Dhaka_1_20_Categorised_0',
@@ -510,7 +511,79 @@
         });
         bounds_group.addLayer(layer_Dhaka_1_20_Categorised_0);
         map.addLayer(layer_Dhaka_1_20_Categorised_0);
+        function pop_percentage_voter_turnout_1(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                    if (typeof layer.closePopup == 'function') {
+                        layer.closePopup();
+                    } else {
+                        layer.eachLayer(function(feature){
+                            feature.closePopup()
+                        });
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">id</th>\
+                        <td>' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">percentage</th>\
+                        <td class="visible-with-data" id="percentage">' + (feature.properties['percentage'] !== null ? autolinker.link(String(feature.properties['percentage']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_percentage_voter_turnout_1_0(feature) {
+            return {
+                pane: 'pane_percentage_voter_turnout_1',
+                radius: Math.max(5, Math.min(28, (Number(feature.properties['percentage']) - 37) * 1.1 + 5)),
+                opacity: 1,
+                color: 'rgba(255,255,255,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,0,117,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_percentage_voter_turnout_1');
+        map.getPane('pane_percentage_voter_turnout_1').style.zIndex = 401;
+        map.getPane('pane_percentage_voter_turnout_1').style['mix-blend-mode'] = 'normal';
+        var layer_percentage_voter_turnout_1 = new L.geoJson(json_percentage_voter_turnout_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_percentage_voter_turnout_1',
+            layerName: 'layer_percentage_voter_turnout_1',
+            pane: 'pane_percentage_voter_turnout_1',
+            onEachFeature: pop_percentage_voter_turnout_1,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_percentage_voter_turnout_1_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_percentage_voter_turnout_1);
+        map.addLayer(layer_percentage_voter_turnout_1);
         var overlaysTree = [
+            {label: '<img src="legend/percentage_voter_turnout_1.png" /> percentage_voter_turnout', layer: layer_percentage_voter_turnout_1},
             {label: 'Dhaka_1_20_Categorised<br /><table><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka10.png" /></td><td>Dhaka-1</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka101.png" /></td><td>Dhaka-10</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka112.png" /></td><td>Dhaka-11</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka123.png" /></td><td>Dhaka-12</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka134.png" /></td><td>Dhaka-13</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka145.png" /></td><td>Dhaka-14</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka156.png" /></td><td>Dhaka-15</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka167.png" /></td><td>Dhaka-16</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka178.png" /></td><td>Dhaka-17</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka189.png" /></td><td>Dhaka-18</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka1910.png" /></td><td>Dhaka-19</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka211.png" /></td><td>Dhaka-2</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka2012.png" /></td><td>Dhaka-20</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka313.png" /></td><td>Dhaka-3</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka414.png" /></td><td>Dhaka-4</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka515.png" /></td><td>Dhaka-5</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka616.png" /></td><td>Dhaka-6</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka717.png" /></td><td>Dhaka-7</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka818.png" /></td><td>Dhaka-8</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_Dhaka919.png" /></td><td>Dhaka-9</td></tr><tr><td style="text-align: center;"><img src="legend/Dhaka_1_20_Categorised_0_20.png" /></td><td></td></tr></table>', layer: layer_Dhaka_1_20_Categorised_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
@@ -542,7 +615,7 @@
         document.getElementById("all").appendChild(col1);
         document.getElementById("all").appendChild(col2);
         col1.appendChild(mapDiv)
-        var Filters = {"cst_n": "str"};
+        var Filters = {"percentage": "real"};
         function filterFunc() {
           map.eachLayer(function(lyr){
           if ("options" in lyr && "dataVar" in lyr["options"]){
@@ -634,53 +707,36 @@
         }
             document.getElementById("menu").appendChild(
                 document.createElement("div"));
-            var div_cst_n = document.createElement('div');
-            div_cst_n.id = "div_cst_n";
-            div_cst_n.className= "filterselect";
-            document.getElementById("menu").appendChild(div_cst_n);
-            sel_cst_n = document.createElement('select');
-            sel_cst_n.multiple = true;
-            sel_cst_n.size = 10;
-            sel_cst_n.id = "sel_cst_n";
-            var cst_n_options_str = "<option value='' unselected></option>";
-            sel_cst_n.onchange = function(){filterFunc()};
-            cst_n_options_str  += '<option value="Dhaka-1">Dhaka-1</option>';
-            cst_n_options_str  += '<option value="Dhaka-10">Dhaka-10</option>';
-            cst_n_options_str  += '<option value="Dhaka-11">Dhaka-11</option>';
-            cst_n_options_str  += '<option value="Dhaka-12">Dhaka-12</option>';
-            cst_n_options_str  += '<option value="Dhaka-13">Dhaka-13</option>';
-            cst_n_options_str  += '<option value="Dhaka-14">Dhaka-14</option>';
-            cst_n_options_str  += '<option value="Dhaka-15">Dhaka-15</option>';
-            cst_n_options_str  += '<option value="Dhaka-16">Dhaka-16</option>';
-            cst_n_options_str  += '<option value="Dhaka-17">Dhaka-17</option>';
-            cst_n_options_str  += '<option value="Dhaka-18">Dhaka-18</option>';
-            cst_n_options_str  += '<option value="Dhaka-19">Dhaka-19</option>';
-            cst_n_options_str  += '<option value="Dhaka-2">Dhaka-2</option>';
-            cst_n_options_str  += '<option value="Dhaka-20">Dhaka-20</option>';
-            cst_n_options_str  += '<option value="Dhaka-3">Dhaka-3</option>';
-            cst_n_options_str  += '<option value="Dhaka-4">Dhaka-4</option>';
-            cst_n_options_str  += '<option value="Dhaka-5">Dhaka-5</option>';
-            cst_n_options_str  += '<option value="Dhaka-6">Dhaka-6</option>';
-            cst_n_options_str  += '<option value="Dhaka-7">Dhaka-7</option>';
-            cst_n_options_str  += '<option value="Dhaka-8">Dhaka-8</option>';
-            cst_n_options_str  += '<option value="Dhaka-9">Dhaka-9</option>';
-            sel_cst_n.innerHTML = cst_n_options_str;
-            div_cst_n.appendChild(sel_cst_n);
-            var lab_cst_n = document.createElement('div');
-            lab_cst_n.innerHTML = 'cst_n';
-            lab_cst_n.className = 'filterlabel';
-            div_cst_n.appendChild(lab_cst_n);
-            var reset_cst_n = document.createElement('div');
-            reset_cst_n.innerHTML = 'clear filter';
-            reset_cst_n.className = 'filterlabel';
-            reset_cst_n.onclick = function() {
-                var options = document.getElementById("sel_cst_n").options;
-                for (var i=0; i < options.length; i++) {
-                    options[i].selected = false;
-                }
-                filterFunc();
+            var div_percentage = document.createElement("div");
+            div_percentage.id = "div_percentage";
+            div_percentage.className = "slider";
+            document.getElementById("menu").appendChild(div_percentage);
+            var lab_percentage = document.createElement('div');
+            lab_percentage.innerHTML  = 'percentage: <span id="val_percentage"></span>';
+            lab_percentage.className = 'filterlabel';
+            document.getElementById("menu").appendChild(lab_percentage);
+            var reset_percentage = document.createElement('div');
+            reset_percentage.innerHTML = 'clear filter';
+            reset_percentage.className = 'filterlabel';
+            lab_percentage.className = 'filterlabel';
+            reset_percentage.onclick = function() {
+                sel_percentage.noUiSlider.reset();
             };
-            div_cst_n.appendChild(reset_cst_n);
+            document.getElementById("menu").appendChild(reset_percentage);
+            var sel_percentage = document.getElementById('div_percentage');
+            noUiSlider.create(sel_percentage, {
+                connect: true,
+                start: [37.42, 63.66],
+                range: {
+                min: 37.42,
+                max: 63.66
+                }
+            });
+            sel_percentage.noUiSlider.on('update', function (values) {
+            val_percentage = document.getElementById('val_percentage');
+            val_percentage.innerHTML = values.join(' - ');
+                filterFunc()
+            });
         resetLabels([layer_Dhaka_1_20_Categorised_0]);
         map.on("zoomend", function(){
             resetLabels([layer_Dhaka_1_20_Categorised_0]);
