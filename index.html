@@ -1,207 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ballots & Boundaries StoryMap</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #1f2937;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 30px 15px;
-    }
-
-    .section {
-      background: white;
-      padding: 25px;
-      margin-bottom: 25px;
-      border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
-    }
-
-    .section h2 {
-      margin-top: 0;
-      color: #111827;
-    }
-
-    .section img {
-      width: 100%;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      margin: 15px 0;
-    }
-
-    .map-button {
-      display: inline-block;
-      background: #1f2937;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    .map-button:hover {
-      background: #374151;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #ddd;
-      color: #444;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD Election 2026 Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        header h1 {
+            font-size: 36px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .map {
+            width: 100%;
+            height: 400px;
+            background-color: #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+        }
+        .map-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .map-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Ballots & Boundaries</h1>
-  <p>
-    A StoryMap of the 13th Election in Dhaka’s 1–20 Parliamentary Constituencies
-  </p>
+    <h1>BD Election 2026 Analysis</h1>
+    <p>Exploring Dhaka's 1–20 Parliamentary Constituencies with Interactive Maps</p>
 </header>
 
 <div class="container">
 
-  <div class="section">
-    <h2>Introduction</h2>
-    <p>
-      This StoryMap explores the 13th election in Dhaka’s 1–20 constituencies.
-      It uses maps to show constituency boundaries, candidate locations, voter
-      distribution, turnout, party vote patterns, vote margin, and party vote share.
-    </p>
-  </div>
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>This StoryMap explores election results from the 2026 parliamentary elections in Dhaka's 1–20 constituencies. It uses interactive maps and visualizations to explain voter patterns, turnout, vote margins, and party vote shares.</p>
+    </div>
 
-  <div class="section">
-    <h2>1. Dhaka 1–20 Constituency Boundaries</h2>
-    <img src="images/cat.png" alt="Dhaka constituency boundary map">
-    <p>
-      This first map introduces the study area. It shows Dhaka’s twenty parliamentary
-      constituencies using different colours. This helps the reader understand the
-      spatial structure before looking at election results.
-    </p>
-    <a class="map-button" href="map-categorised/" target="_blank">
-      Open Interactive Boundary Map
-    </a>
-  </div>
+    <div class="section">
+        <h2>1. Constituency Boundaries</h2>
+        <div class="map" id="map-categorised">
+            <!-- Embed your map here -->
+        </div>
+        <p>This section shows the boundaries of Dhaka’s 1–20 constituencies. It provides a visual reference for understanding the area.</p>
+        <a class="map-button" href="map-categorised/" target="_blank">View Interactive Map</a>
+    </div>
 
-  <div class="section">
-    <h2>2. Candidate and Parliamentary Representation</h2>
-    <img src="images/Parliament_members.png" alt="Parliament members map">
-    <p>
-      This map shows the location of candidates or parliamentary representatives.
-      It connects political actors with the constituencies they represent.
-    </p>
-  </div>
+    <div class="section">
+        <h2>2. Candidate Locations</h2>
+        <div class="map" id="map-turnout">
+            <!-- Embed your map here -->
+        </div>
+        <p>Explore the locations of parliamentary candidates across Dhaka's constituencies and their geographic distributions.</p>
+        <a class="map-button" href="map-turnout/" target="_blank">View Interactive Map</a>
+    </div>
 
-  <div class="section">
-    <h2>3. Gender Distribution of Voters</h2>
-    <img src="images/dot.png" alt="Gender distribution map">
-    <p>
-      This dot map shows the distribution of male, female, and eunuch voters across
-      Dhaka’s constituencies. It helps explain the voter composition of the study area.
-    </p>
-  </div>
+    <div class="section">
+        <h2>3. Voter Turnout by Constituency</h2>
+        <div class="map" id="map-bivariate">
+            <!-- Embed your map here -->
+        </div>
+        <p>This section visualizes the voter turnout percentage across constituencies, showing which areas had high or low participation in the election.</p>
+        <a class="map-button" href="map-bivariate/" target="_blank">View Interactive Map</a>
+    </div>
 
-  <div class="section">
-    <h2>4. Votes Cast by Constituency</h2>
-    <img src="images/votes_turnout_proportional.png" alt="Votes cast map">
-    <p>
-      This map shows the total number of votes cast in each constituency.
-      Larger circles represent higher vote counts.
-    </p>
-  </div>
+    <div class="section">
+        <h2>4. Vote Margin</h2>
+        <div class="map" id="map-vote-margin">
+            <!-- Embed your map here -->
+        </div>
+        <p>This map compares the vote margins between parties like BNP and Jamaat-E-Islami, highlighting which constituencies were more competitive.</p>
+        <a class="map-button" href="map-vote-margin/" target="_blank">View Interactive Map</a>
+    </div>
 
-  <div class="section">
-    <h2>5. Percentage of Voter Turnout</h2>
-    <img src="images/percentage_proportional.png" alt="Percentage voter turnout map">
-    <p>
-      This map shows voter turnout percentage. It is different from total votes cast
-      because a constituency may have many votes but still have a lower turnout rate.
-    </p>
-    <a class="map-button" href="proportional/" target="_blank">
-      Open Interactive Turnout Map
-    </a>
-  </div>
-
-  <div class="section">
-    <h2>6. BNP and Jamaat-E-Islami Vote Pattern</h2>
-    <img src="images/Choroplrth_bivariate_9_9.png" alt="Bivariate BNP Jamaat map">
-    <p>
-      This bivariate map compares BNP and Jamaat-E-Islami vote patterns.
-      It helps identify where BNP was stronger, where Jamaat-E-Islami was stronger,
-      and where both parties showed vote presence.
-    </p>
-    <a class="map-button" href="choropleth/" target="_blank">
-      Open Interactive Choropleth Map
-    </a>
-  </div>
-
-  <div class="section">
-    <h2>7. Vote Margin Between Jamaat-E-Islami and BNP</h2>
-    <img src="images/diverging_map.png" alt="Vote margin map">
-    <p>
-      This map shows the vote margin between Jamaat-E-Islami and BNP.
-      Smaller margins show closer competition, while larger margins show stronger
-      dominance by one party.
-    </p>
-    <a class="map-button" href="margin/" target="_blank">
-      Open Interactive Vote Margin Map
-    </a>
-  </div>
-
-  <div class="section">
-    <h2>8. Party Vote Share</h2>
-    <img src="images/pie.png" alt="Party vote share map">
-    <p>
-      This pie chart map shows the vote share of major parties in each constituency.
-      It gives a final comparison of party competition across Dhaka.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Conclusion</h2>
-    <p>
-      These maps show that election results are also spatial patterns. Constituency
-      boundaries, voter distribution, turnout, party vote patterns, vote margins,
-      and vote share all help explain the electoral geography of Dhaka’s 1–20
-      constituencies.
-    </p>
-  </div>
+    <div class="section">
+        <h2>Conclusion</h2>
+        <p>This analysis showcases the diverse political landscape of Dhaka. It presents a detailed visual understanding of how elections unfolded across constituencies.</p>
+    </div>
 
 </div>
 
 <footer>
-  <p>Created using QGIS, qgis2web, GitHub, and GitHub Pages.</p>
+    <p>Created using QGIS, GitHub, and GitHub Pages</p>
 </footer>
 
 </body>
